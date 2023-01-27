@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login"
-    android:background="@drawable/appbackground">
+    android:background="@drawable/background">
 
     <ImageView
         android:id="@+id/imageView"
@@ -35,6 +35,7 @@
             android:layout_marginTop="0dp"
             android:text="Welcome To BookAid"
             android:textSize="30dp"
+            android:textColor="@color/forest_green"
             android:fontFamily="sans-serif-condensed"
             android:textStyle="italic|bold"/>
 
@@ -66,16 +67,17 @@
             android:minHeight="48dp" />
     </LinearLayout>
 
-    <ImageButton
+    <Button
         android:id="@+id/sign_in"
-        android:layout_width="231dp"
-        android:layout_height="70dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/ll"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/login"
-        android:gravity="center"/>
+        android:text="Login"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/forest_green"
+        android:layout_gravity="center"
+        android:layout_marginStart="100dp"/>
 
     <TextView
         android:id="@+id/register"
@@ -85,6 +87,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="100dp"
         android:layout_marginTop="120dp"
+        android:textSize="20dp"
         android:text="Click Here for New User"
         android:gravity="center" />
 
